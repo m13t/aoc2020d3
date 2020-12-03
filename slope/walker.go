@@ -13,11 +13,7 @@ func NewWalker(s *SlopeMap) *SlopeWalker {
 	}
 }
 
-func (s *SlopeWalker) Walk() error {
-	return s.WalkWith(3, 1)
-}
-
-func (s *SlopeWalker) WalkWith(right, down int) error {
+func (s *SlopeWalker) Walk(right, down int) error {
 	if len(s.slope)-1 >= s.row+down {
 		s.row += down
 	} else {

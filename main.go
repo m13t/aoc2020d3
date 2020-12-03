@@ -69,7 +69,7 @@ func walkTheWalk(sw *slope.SlopeWalker, right, down int) (int, int) {
 	var free int
 
 	for {
-		if err := sw.WalkWith(right, down); err != nil {
+		if err := sw.Walk(right, down); err != nil {
 			break
 		}
 
