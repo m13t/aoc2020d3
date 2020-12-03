@@ -2,6 +2,7 @@ package slope
 
 import "fmt"
 
+// Don't judge me for using static dimensions!
 type SlopeMap [323][31]MapMarker
 
 func (s *SlopeMap) PrintMap() {
